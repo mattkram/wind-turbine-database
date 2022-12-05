@@ -1,0 +1,28 @@
+name: us-wind-turbine-database
+
+description: Locations of all US wind turbines from USWTDB
+
+commands:
+  notebook:
+    unix: jupyter notebook us_wind_turbine_database.ipynb
+  dashboard:
+    unix: panel serve us_wind_turbine_database.ipynb --show
+
+downloads: {}
+
+packages:
+- python=3.9.7
+- colorcet=3.0.0
+- datashader=0.13.0
+- geoviews=1.9.3
+- holoviews=1.14.7
+- hvplot=0.7.3
+- panel=0.12.6
+
+channels:
+- pyviz
+- defaults
+
+platforms:
+- linux-64
+- osx-64
