@@ -1,0 +1,7 @@
+name: wind-turbine-database
+environments:
+  default:
+    - environment.yml
+commands:
+  notebook: jupyter notebook us_wind_turbine_database.ipynb
+  dashboard: panel serve us_wind_turbine_database.ipynb --show
